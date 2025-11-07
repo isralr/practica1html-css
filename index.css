@@ -1,0 +1,45 @@
+body {
+    display: grid;
+    grid-template-columns: 220px 1fr; /* Col 1: 220px fijos. Col 2: resto (1fr) */
+    height: 100vh; /*100% de la altura de la ventana*/
+    gap: 10px; /*Espacio entre columnas*/
+    margin-left: 0%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+.barra-lateral {
+    background-color: #0a818a;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.enlace {
+    display: flex; /* Cada enlace en una línea separada */
+    flex-direction: column ;
+    color: white;
+    padding: 10px 0;
+    text-decoration: none;
+}
+
+.cabecera {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 350px;
+    height: 80px;
+    padding: 10px;
+    background-color: #a5e2ebc0;
+}
+
+.titulo-cabecera {
+    font-size: 1.5rem;
+}
+
+
+.imagen-cabecera {
+    width: auto;
+    height: 100%;
+    border-radius: 15px;
+}
