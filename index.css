@@ -1,12 +1,20 @@
+/* 
+* El body se estructura con display grid para colocar a la izquierda un elemento que ocupe 
+* el 100% de la altura de la pantalla y dejando el 
+*/
 body {
     display: grid;
-    grid-template-columns: 220px 1fr; /* Col 1: 220px fijos. Col 2: resto (1fr) */
+    grid-template-columns: 200px 1fr; /* Col 1: 200pxs fijos. Col 2: resto (1fr) */
     height: 100vh; /*100% de la altura de la ventana*/
     gap: 10px; /*Espacio entre columnas*/
     margin-left: 0%;
     margin-top: 0%;
     margin-bottom: 0%;
-}
+    background-color: antiquewhite;
+    font-family: 'Roboto', sans-serif; /* 1. APLICAMOS LA FUENTE */
+    font-weight: 300; /* 2. APLICAMOS EL GROSOR "LIGHT 300" QUE PEDISTE */
+} 
+
 
 .barra-lateral {
     background-color: #0a818a;
@@ -15,31 +23,184 @@ body {
     padding: 10px;
 }
 
-.enlace {
+.enlace-nav {
     display: flex; /* Cada enlace en una línea separada */
     flex-direction: column ;
+    text-align: left;
+    margin-top: 10px;
+    border-radius: 10px;
     color: white;
-    padding: 10px 0;
+    padding: 15px;
     text-decoration: none;
+    transition: background-color 0.3s ease;
 }
+
+.enlace-nav:hover {
+    background-color: #4cc7da;
+    color: white;
+}
+
+
+.contenedor-principal {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    gap: 0px;
+    padding: 0px;
+}
+
+/* Cabecera */
 
 .cabecera {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 350px;
-    height: 80px;
+    gap: 275px;
+    height: 50px;
     padding: 10px;
     background-color: #a5e2ebc0;
 }
 
+/* Elementos de la cabecera */
+
 .titulo-cabecera {
     font-size: 1.5rem;
+    width: 290px;
+    color: #08656b;
 }
 
+.descripcion-cabecera{
+    width: 250px;
+    color: #08656b;
+}
 
 .imagen-cabecera {
     width: auto;
     height: 100%;
     border-radius: 15px;
 }
+
+/* Separador */
+
+.separador-header-main {
+    height: 5px;
+    background-color: #0a818a;
+    border-radius: 2px;
+}
+
+/* Main */
+
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: #a5e2ebc0;
+}
+
+.contenedor-articulos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.articulo {
+    height: auto;
+    align-content: center;
+    border-radius: 7px;
+    width: 1150px;
+    margin: 0px;
+    font-size: smaller;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    background-color: antiquewhite;
+}
+
+.titulo-articulo {
+    line-height: 0px;
+    margin-top: 15px;
+    color: #08656b;
+}
+
+.lista-articulo {
+    line-height: 20px;
+    margin-bottom: 5px;
+    padding-left: 14px;
+}
+
+.contenedor-comparacion{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 10px;
+    padding: 10px;
+    margin: -10px;
+    border-radius: 5px;
+    color: antiquewhite;
+    background-color: #0a818a;
+}
+
+.titulo-comparacion {
+    margin: 0px;
+}
+
+.separador-comparacion {
+    height: 2px;
+    background-color: #1ca0a9;
+    border-radius: 2px;
+}
+
+.barra-comparacion {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 0.8rem;
+    padding-left: 10px;
+    height: 40px;
+    gap: 1065px;
+    border-radius: 5px;
+    color: antiquewhite;
+    background-color: #1ca0a9;
+}
+
+.porcentaje-comparacion {
+    height: 25px;
+    text-align: center;
+    font-size: small;
+    align-content: center;
+    border-radius: 14px;
+    width: 40px;
+    background-color: #2ebcc6;
+}
+
+/* Separador */
+
+.separador-main-footer {
+    height: 50px;
+    background-color: antiquewhite;
+    border-radius: 2px;
+}
+
+/* Pie de página */
+
+.pie-de-pagina {
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    margin-top: 100px;
+    margin-left: -10px;
+    margin-right: -8px;
+    background-color: #0a818a;
+}
+
+.copyright {
+    text-align: center;
+    align-content: center;
+    margin: auto;
+    font-size:x-small;
+    color:antiquewhite;
+}
+

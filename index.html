@@ -11,11 +11,11 @@
 <body>
     <!-- Barra lateral de navegación -->
     <nav class="barra-lateral">
-        <a href="#inicio" class="enlace">Inicio</a>
-        <a href="#articulos" class="enlace">Artículos</a>
-        <a href="#comparacion" class="enlace">Comparación</a>
-        <a href="#uax" class="enlace">UAX</a>
-        <a href="#universidad" class="enlace">La Universidad</a>
+        <a href="#inicio" class="enlace-nav">Inicio</a>
+        <a href="#articulos" class="enlace-nav">Artículos</a>
+        <a href="#comparacion" class="enlace-nav">Comparación</a>
+        <a href="#uax" class="enlace-nav">UAX</a>
+        <a href="#universidad" class="enlace-nav">La Universidad</a>
     </nav>
 
     <div class="contenedor-principal">
@@ -28,10 +28,49 @@
             <img src="https://imgs.search.brave.com/CKZ0lxbqvFegpVNcQf9KwiFUJJN7eaTMDOqpl4e2m5E/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/eHRyYWZvbmRvcy5j/b20vd2FsbHBhcGVy/cy9ndGEtdmktbG9n/by0xMjA3MC5qcGc" class="imagen-cabecera" alt="Imagen de comparador de artículos">
         </header>
 
-        <main>
+        <div class="separador-header-main"></div>
+
+        <main class="main">
+            <div class="contenedor-articulos">
+                <section class="articulo">
+                    <h4 class="titulo-articulo">Artículo 1: Innovación Tecnológica</h4>
+                    <p>Texto de ejemplo</p>
+                    <ul class="lista-articulo">
+                        <li>Ventaja: Actualización constante de noticias.</li>
+                        <li>Desventaja: Filtro de calidad variable.</li>
+                    </ul>
+                </section>
+            
+                <section class="articulo">
+                    <h4 class="titulo-articulo">Artículo 2: Impacto de la IA en la Sociedad</h4>
+                    <p>Texto de ejemplo</p>
+                    <ul class="lista-articulo">
+                        <li>Ventaja: Optimización de tareas repetitivas.</li>
+                        <li>Desventaja: Riesgos éticos a considerar.</li>
+                    </ul>
+                </section>
+            </div>
+
+            <div class="contenedor-comparacion">
+                <section class="titulo-comparacion">
+                    <h4 class="titulo-comparacion">Resultado de la Comparación</h4>
+                </section>
+                <div class="separador-comparacion"></div>
+                <section class="barra-comparacion">
+                    <p>Articulo A</p>
+                    <p class="porcentaje-comparacion">85%</p>
+                </section>
+                <section class="barra-comparacion">
+                    <p>Articulo B</p>
+                    <p class="porcentaje-comparacion">78%</p>
+                </section>
+            </div>
         </main>
 
-        <footer>
+        <div class="separador-main-footer"></div>
+        
+        <footer class="pie-de-pagina">
+            <p class="copyright">© Universidad Alfonso X el Sabio - <a href="https://www.uax.es">https://www.uax.es</a></p>
         </footer>
 
     </div>
